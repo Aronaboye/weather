@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="weather.js" defer></script>
+    <title>Météo</title>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div>
+                <h1>Météo Actuelle</h1>
+            </div>
+            <div>
+                <form>
+                    <label for="search">Enter votre ville</label>
+                    <input type="search" name="search" id="inputCity" placeholder="Entrer votre Ville">
+                    <button type="submit">Valider</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="weather">
+       <div>
+            <h3>Ville</h3>
+            <img src="image/cityscape.png" alt="city">
+            <div id="ville"></div>
+        </div> 
+        <div>
+            <h3>Température</h3>
+            <img src="image/thermometer.png" alt="Température">
+            <div id="temp"></div>
+        </div>
+        <div>
+            <h3>Humidité</h3>
+            <img src="image/humidity.png" alt="humidity">
+            <div id="humidity"></div>
+        </div>
+        <div>
+            <h3>Vent</h3>
+            <img src="image/wind.png" alt="wind">
+            <div id="vent"></div>
+        </div>
+    </section>
+</body>
+</html>
